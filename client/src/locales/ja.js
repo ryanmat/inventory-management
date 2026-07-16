@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '在庫補充',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +107,7 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '送信済み注文',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,7 +127,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -204,6 +207,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '送信済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'
@@ -294,6 +298,30 @@ export default {
   },
 
   // Tasks Modal
+  restocking: {
+    title: '在庫補充',
+    description: '利用可能な予算に基づいて補充品目を推奨します',
+    budgetLabel: '利用可能予算',
+    recommendedCost: '推奨コスト',
+    remainingBudget: '残り予算',
+    recommendedItems: '推奨品目',
+    placeOrder: '注文する',
+    placingOrder: '注文送信中...',
+    orderSuccess: '補充注文 {orderNumber} が送信されました。予定配達日: {date}',
+    orderError: '補充注文の送信に失敗しました',
+    noRecommendations: '選択した予算内に収まる品目がありません',
+    days: '日',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      trend: 'トレンド',
+      shortfall: '不足予測',
+      quantity: '数量',
+      unitCost: '単価',
+      lineCost: '小計',
+      leadTime: 'リードタイム'
+    }
+  },
   tasks: {
     title: 'マイタスク',
     taskTitle: 'タスク名',

@@ -214,7 +214,7 @@ def test_order_status_values(self, client):
     response = client.get("/api/orders")
     data = response.json()
 
-    valid_statuses = ["delivered", "shipped", "processing", "backordered"]
+    valid_statuses = ["delivered", "shipped", "processing", "backordered", "submitted"]
 
     for order in data:
         assert order["status"].lower() in valid_statuses
